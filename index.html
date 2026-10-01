@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arooj Kanwal — Video Editor & Creative Designer</title>
+<meta name="description" content="Arooj Kanwal — Video Editor & Creative Designer portfolio: reels, documentary, product advertising, promotional videos and motion graphics.">
+<style>
+:root{
+ --bg:#030b18;--bg2:#071426;--blue:#087cff;--cyan:#00cfff;--white:#f7fbff;--muted:#9fb0c4;
+ --line:rgba(255,255,255,.10);--panel:rgba(255,255,255,.045);--ease:cubic-bezier(.2,.75,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
+ radial-gradient(circle at 72% -8%,rgba(8,124,255,.18),transparent 28%),
+ radial-gradient(circle at -4% 32%,rgba(0,207,255,.08),transparent 20%),var(--bg);color:var(--white);line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,black,transparent 92%)}
+body:after{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(8,124,255,.035) 48%,transparent 67%);animation:ambient 12s linear infinite}
+@keyframes ambient{to{transform:translateX(12%)}}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1180px,92%);margin:auto}
+#particles{position:fixed;inset:0;z-index:-2;pointer-events:none}.progress{position:fixed;top:0;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan));z-index:100;box-shadow:0 0 18px rgba(0,207,255,.6)}
+.cursor-glow{position:fixed;width:260px;height:260px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(8,124,255,.12),transparent 68%);filter:blur(7px);transform:translate(-50%,-50%)}
+/* NAV */
+.nav-wrap{position:fixed;top:16px;left:0;right:0;z-index:50}.nav{width:min(1180px,92%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 15px;border:1px solid var(--line);border-radius:18px;background:rgba(3,11,24,.68);backdrop-filter:blur(18px);box-shadow:0 18px 60px rgba(0,0,0,.28)}
+.brand{font-weight:900;letter-spacing:-.03em}.brand .accent{color:var(--cyan)}.nav-links{display:flex;gap:25px;font-size:13px;color:#ced9e6}.nav-links a{opacity:.78;position:relative;padding:5px 0}.nav-links a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:.25s}.nav-links a:hover{opacity:1}.nav-links a:hover:after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:13px;border:1px solid var(--line);color:#fff;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s ease;position:relative;overflow:hidden}.btn:before{content:"";position:absolute;inset:0;transform:translateX(-115%);background:linear-gradient(100deg,transparent,rgba(255,255,255,.18),transparent);transition:.6s}.btn:hover:before{transform:translateX(115%)}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--blue),#1abaff);border-color:transparent;box-shadow:0 12px 32px rgba(8,124,255,.18)}.secondary{background:rgba(255,255,255,.025)}
+/* HERO */
+.hero{min-height:100vh;display:grid;place-items:center;padding:150px 0 90px;position:relative}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border-radius:999px;border:1px solid rgba(0,207,255,.23);background:rgba(0,207,255,.05);color:#c0f0ff;letter-spacing:.14em;text-transform:uppercase;font-size:11px}.eyebrow i{display:block;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan);animation:pulse 1.7s infinite}@keyframes pulse{50%{transform:scale(.55);opacity:.6}}
+h1{font-size:clamp(54px,7vw,90px);line-height:.95;letter-spacing:-.065em;margin:22px 0}.gradient{background:linear-gradient(100deg,#fff 22%,#88e6ff 76%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:650px;color:var(--muted);font-size:18px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.stats{display:flex;gap:30px;flex-wrap:wrap;font-size:12px;color:#b5c6d9}.stats strong{display:block;color:#fff;font-size:21px;letter-spacing:-.03em}
+.hero-art{position:relative;min-height:540px;border:1px solid var(--line);border-radius:28px;padding:13px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));box-shadow:0 30px 100px rgba(0,0,0,.34);transform-style:preserve-3d}.hero-stage{position:relative;min-height:510px;border-radius:21px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:linear-gradient(145deg,rgba(8,124,255,.13),transparent 45%),url('assets/hero-office.png') center/cover no-repeat}.hero-stage:before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(3,11,24,.1),rgba(3,11,24,.72));}.hero-stage:after{content:"";position:absolute;inset:-25% -30%;background:linear-gradient(105deg,transparent 43%,rgba(0,207,255,.20) 50%,transparent 57%);animation:sweep 6s ease-in-out infinite}.hero-content-overlay{position:absolute;inset:0;z-index:2}.hud{position:absolute;padding:10px 12px;border:1px solid rgba(255,255,255,.11);border-radius:13px;background:rgba(3,11,24,.58);backdrop-filter:blur(10px);color:#d9e9f6;font-size:10px;letter-spacing:.05em;box-shadow:0 10px 30px rgba(0,0,0,.25);animation:float 5s ease-in-out infinite}.h1{top:10%;left:6%}.h2{top:19%;right:6%;animation-delay:-1.3s}.h3{bottom:15%;left:7%;animation-delay:-2.6s}.h4{bottom:12%;right:6%;animation-delay:-.8s}@keyframes float{50%{transform:translateY(-8px)}}@keyframes sweep{0%,35%{transform:translateX(-35%)}65%,100%{transform:translateX(35%)}}
+.core{position:absolute;width:170px;height:170px;left:50%;top:51%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 35% 30%,#c0f7ff 0 5%,#36baff 23%,#06458e 52%,transparent 72%);filter:drop-shadow(0 0 48px rgba(8,124,255,.58))}.orbit{position:absolute;left:50%;top:51%;transform:translate(-50%,-50%);border:1px solid rgba(95,221,255,.31);border-radius:50%;animation:spin 17s linear infinite}.o1{width:260px;height:260px}.o2{width:355px;height:355px;animation-duration:25s;animation-direction:reverse}.o3{width:455px;height:455px;animation-duration:31s}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+/* SECTIONS */
+.section{padding:108px 0}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:28px}.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#70dcff;margin-bottom:8px}h2{font-size:clamp(35px,4.4vw,54px);line-height:1.03;letter-spacing:-.045em}.lead{max-width:590px;color:var(--muted)}
+/* MOTION STRIP */
+.marquee{overflow:hidden;border-block:1px solid var(--line);background:rgba(255,255,255,.018);padding:10px 0}.marquee-track{width:max-content;display:flex;gap:30px;animation:marquee 28s linear infinite;color:#7893ad;font-size:11px;letter-spacing:.16em;text-transform:uppercase}.marquee-track b{color:#dce8f2;font-weight:600}.marquee-track span{color:var(--blue)}@keyframes marquee{to{transform:translateX(-50%)}}
+/* WORK */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0 25px}.filter{padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.025);color:#c7d5e2;border:1px solid var(--line);cursor:pointer;transition:.25s}.filter:hover,.filter.active{color:#fff;border-color:rgba(8,124,255,.45);background:rgba(8,124,255,.12)}
+.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.project{grid-column:span 6;border-radius:23px;overflow:hidden;border:1px solid var(--line);background:var(--panel);transition:transform .35s var(--ease),box-shadow .35s ease,border-color .35s ease;transform-style:preserve-3d}.project.wide{grid-column:span 7}.project.narrow{grid-column:span 5}.project.hidden{display:none}.project:hover{border-color:rgba(8,124,255,.42);box-shadow:0 24px 75px rgba(0,0,0,.3)}
+.thumb{height:260px;position:relative;overflow:hidden;background-size:cover;background-position:center}.thumb:before{content:"";position:absolute;inset:-25%;background:linear-gradient(110deg,transparent 43%,rgba(255,255,255,.10) 50%,transparent 57%);transform:translateX(-55%);transition:transform .85s ease}.project:hover .thumb:before{transform:translateX(55%)}.thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(3,11,24,.96),rgba(3,11,24,.05) 62%)}
+.thumb.lifestyle{background-image:radial-gradient(circle at 72% 25%,rgba(0,207,255,.4),transparent 20%),linear-gradient(145deg,#142a42,#030a13)}.thumb.travel{background-image:radial-gradient(circle at 75% 25%,rgba(0,207,255,.27),transparent 22%),linear-gradient(145deg,#123355,#030b16)}.thumb.doc{background-image:url('assets/ai-office.png')}.thumb.product{background-image:url('assets/serum-product.png')}.thumb.tech{background-image:url('assets/tech-network.png')}.thumb.fashion{background-image:url('assets/fashion-poster.jpg')}.thumb.showreel{background-image:url('assets/hero-office.png')}
+.badge{position:absolute;top:16px;right:16px;z-index:2;padding:6px 9px;border-radius:999px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.11);font-size:10px;color:#d9e7f3}.play{position:absolute;left:18px;bottom:18px;z-index:2;width:47px;height:47px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 0 30px rgba(8,124,255,.30)}.play:after{content:"";margin-left:3px;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:10px solid #fff}.project-body{padding:19px}.project h3{font-size:21px;margin-bottom:5px}.project p{color:var(--muted);font-size:14px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.tag{padding:6px 9px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.025);font-size:10px;color:#dae7f3}
+/* VIDEO CARD */
+.video-preview{position:relative;height:100%;width:100%;object-fit:cover;display:block;background:#071426}.video-error{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:20px;background:rgba(3,11,24,.82);z-index:5;color:#dce9f6;font-size:12px}.video-error.show{display:flex}.live-overlay{position:absolute;left:16px;bottom:16px;z-index:3;padding:7px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.38);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#dce9f6}
+/* TOOLS */
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tool{position:relative;overflow:hidden;padding:27px;border:1px solid var(--line);border-radius:23px;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.017));transition:.3s var(--ease);transform-style:preserve-3d}.tool:hover{transform:translateY(-7px);border-color:rgba(8,124,255,.36);box-shadow:0 22px 65px rgba(0,0,0,.25)}.tool .num{font-size:10px;letter-spacing:.16em;color:#71ddff}.tool h3{font-size:29px;margin:10px 0 8px}.tool p{font-size:14px;color:var(--muted)}.tool:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;right:-75px;bottom:-100px;background:rgba(8,124,255,.13);filter:blur(45px)}
+/* ABOUT */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}.panel{border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.035);padding:30px}.profile{min-height:385px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}.profile:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(8,124,255,.13);filter:blur(65px)}
+.avatar{position:relative;width:clamp(118px,14vw,150px);aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;background:linear-gradient(145deg,#103052,#061321);border:1px solid rgba(0,207,255,.42);box-shadow:0 0 55px rgba(8,124,255,.22),inset 0 0 30px rgba(255,255,255,.025);font-size:clamp(34px,4vw,48px);font-weight:900;letter-spacing:-.06em;line-height:1;flex:none}.avatar span{display:block;transform:translateY(-1px);white-space:nowrap}.status{display:inline-flex;align-items:center;gap:7px;margin-top:11px;padding:7px 10px;border-radius:999px;border:1px solid rgba(0,207,255,.18);background:rgba(0,207,255,.04);font-size:11px;color:#aeeaff}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.skill{font-size:11px;padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.025)}
+/* PROCESS */
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}.step{padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03);position:relative}.step .num{font-size:10px;letter-spacing:.14em;color:#73dfff}.step h3{margin:8px 0;font-size:20px}.step p{font-size:13px;color:var(--muted)}.step:not(:last-child):after{content:"";position:absolute;right:-14px;top:50%;width:14px;height:1px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+/* CONTACT */
+.contact{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}form{display:grid;gap:11px;margin-top:18px}input,select,textarea{width:100%;border-radius:13px;border:1px solid var(--line);background:#061120;color:#fff;padding:13px;outline:none}textarea{min-height:140px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:rgba(8,124,255,.55);box-shadow:0 0 0 3px rgba(8,124,255,.09)}.socials{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.social{padding:9px 11px;border:1px solid var(--line);border-radius:999px;color:#c8d7e5;font-size:12px;transition:.25s}.social:hover{color:#fff;border-color:rgba(0,207,255,.35);transform:translateY(-2px)}
+/* MODAL */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(12px);z-index:90;display:none;align-items:center;justify-content:center;padding:5vw}.modal.open{display:flex}.modal-box{width:min(980px,100%);max-height:90vh;border:1px solid var(--line);border-radius:24px;background:#06101e;box-shadow:0 40px 120px rgba(0,0,0,.6);overflow:hidden;position:relative}.modal-media{display:flex;align-items:center;justify-content:center;max-height:72vh;min-height:0;background:#02060c}.modal-media video{display:block;width:auto;height:auto;max-width:100%;max-height:72vh;object-fit:contain;background:#000}.modal-info{padding:20px 22px}.modal-close{position:absolute;right:12px;top:12px;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.6);color:#fff;cursor:pointer}.modal-note{color:var(--muted);font-size:13px;margin-top:6px}
+.footer{border-top:1px solid var(--line);padding:35px 0 46px;color:#8da0b4;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.show{opacity:1;transform:none}
+@media(max-width:940px){.nav-links{display:none}.hero-grid,.about,.contact{grid-template-columns:1fr}.tools{grid-template-columns:1fr 1fr}.project,.project.wide,.project.narrow{grid-column:span 6}.process{grid-template-columns:1fr 1fr}.step:not(:last-child):after{display:none}.hero-art{min-height:460px}.hero-stage{min-height:430px}}
+@media(max-width:620px){.hero{padding-top:120px}.hero-grid{gap:35px}h1{font-size:52px}.hero-copy{font-size:16px}.hero-art{padding:9px;border-radius:21px}.hero-stage{min-height:380px}.core{width:125px;height:125px}.o1{width:200px;height:200px}.o2{width:275px;height:275px}.o3{width:350px;height:350px}.section{padding:82px 0}.projects,.tools,.process{grid-template-columns:1fr}.project,.project.wide,.project.narrow{grid-column:span 1}.thumb{height:240px}.avatar{width:125px}.section-head{display:block}.lead{margin-top:12px}.nav{padding:10px 12px}.nav .btn{padding:10px 12px;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><div class="cursor-glow" id="cursorGlow"></div><canvas id="particles"></canvas>
+<div class="nav-wrap"><nav class="nav">
+<a class="brand" href="#home">Arooj <span class="accent">Kanwal</span></a>
+<div class="nav-links"><a href="#work">Work</a><a href="#tools">Tools</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
+<a class="btn primary" href="#contact">Hire / Collaborate</a>
+</nav></div>
+
+<header class="hero" id="home"><div class="container hero-grid">
+<div class="reveal">
+<div class="eyebrow"><i></i>Video Editor • Creative Designer</div>
+<h1>Turning ideas into <span class="gradient">visual stories.</span></h1>
+<p class="hero-copy">Hi, I’m <strong>Arooj Kanwal</strong>. I create cinematic reels, promotional edits, documentary-style videos, product advertisements and motion-focused content with a clean, modern visual language.</p>
+<div class="hero-actions"><a class="btn primary" href="#work">View My Work ↘</a><a class="btn secondary" href="#contact">Available for Opportunities</a></div>
+<div class="stats"><div><strong>05+</strong>Core portfolio pieces</div><div><strong>03</strong>Creative tools</div><div><strong>09+</strong>Editing skills</div></div>
+</div>
+<div class="hero-art reveal" data-tilt><div class="hero-stage"><div class="hero-content-overlay">
+<div class="orbit o3"></div><div class="orbit o2"></div><div class="orbit o1"></div><div class="core"></div>
+<div class="hud h1">SHORT-FORM • 9:16</div><div class="hud h2">CINEMATIC • 16:9</div><div class="hud h3">PRODUCT AD • COLOR GRADE</div><div class="hud h4">MOTION • SOUND • STORY</div>
+</div></div></div>
+</div></header>
+
+<div class="marquee"><div class="marquee-track"><b>VIDEO EDITING</b><span>✦</span><b>MOTION GRAPHICS</b><span>✦</span><b>COLOR GRADING</b><span>✦</span><b>PRODUCT ADS</b><span>✦</span><b>SHORT-FORM</b><span>✦</span><b>STORYTELLING</b><span>✦</span><b>SOUND DESIGN</b><span>✦</span><b>VIDEO EDITING</b><span>✦</span><b>MOTION GRAPHICS</b><span>✦</span><b>COLOR GRADING</b><span>✦</span><b>PRODUCT ADS</b><span>✦</span></div></div>
+
+<section class="section" id="work"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">Selected work</div><h2>Work that shows range.</h2></div><p class="lead">Your actual portfolio direction is now reflected here: lifestyle, travel, documentary, product advertising, promotional motion graphics and the editing showreel.</p></div>
+<div class="filters reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="reel">Reels</button><button class="filter" data-filter="cinematic">Cinematic</button><button class="filter" data-filter="documentary">Documentary</button><button class="filter" data-filter="product">Product</button><button class="filter" data-filter="promo">Promotional</button><button class="filter" data-filter="motion">Motion Graphics</button><button class="filter" data-filter="showreel">Showreel</button></div>
+<div class="projects">
+<article class="project wide reveal" data-cat="reel cinematic" data-tilt data-title="Luxury Lifestyle Reel" data-video="./Luxury%20Lifestyle%20Reel.mp4"><div class="thumb lifestyle"><video class="video-preview" muted preload="none"><source data-src="./Luxury%20Lifestyle%20Reel.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">REEL • 9:16</span></div><div class="project-body"><h3>Luxury Lifestyle Reel</h3><p>Premium short-form edit using clean cuts, music sync, subtle zooms and luxury visual pacing.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Short-form</span><span class="tag">9:16</span></div></div></article>
+<article class="project narrow reveal" data-cat="reel cinematic" data-tilt data-title="Cinematic Travel Reel" data-video="./Cinematic%20Travel.mp4"><div class="thumb travel"><video class="video-preview" muted preload="none"><source data-src="./Cinematic%20Travel.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">REEL • 9:16</span></div><div class="project-body"><h3>Cinematic Travel Reel</h3><p>Emotional travel storytelling built around slow motion, speed ramps, atmosphere and cinematic grading.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Travel</span><span class="tag">9:16</span></div></div></article>
+<article class="project wide reveal" data-cat="documentary cinematic" data-tilt data-title="Short Documentary" data-video="./short%20documentary.mp4"><div class="thumb doc"><video class="video-preview" muted playsinline preload="none"><source data-src="./short%20documentary.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">DOCUMENTARY • 16:9</span></div><div class="project-body"><h3>Short Documentary</h3><p>Documentary-style storytelling focused on narration, pacing, B-roll, emotional sequencing and controlled sound design.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Storytelling</span><span class="tag">16:9</span></div></div></article>
+<article class="project wide reveal" data-cat="product" data-tilt data-title="CONATURAL Serum Product Advertisement" data-video="./conatural%20product%20ad.mp4"><div class="thumb product"><video class="video-preview" muted preload="none"><source data-src="./conatural%20product%20ad.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">PRODUCT • CINEMATIC</span></div><div class="project-body"><h3>CONATURAL Serum Product Advertisement</h3><p>Luxury skincare commercial with macro product visuals, liquid shots, cinematic lighting and premium pacing.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Product Ad</span><span class="tag">Color Grade</span></div></div></article>
+<article class="project narrow reveal" data-cat="promo motion" data-tilt data-title="Fashion Brand Advertisement" data-video="./fashion%20brand%20_%20advertisement.mp4"><div class="thumb fashion"><video class="video-preview" muted preload="none"><source data-src="./fashion%20brand%20_%20advertisement.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">MOTION • 9:16</span></div><div class="project-body"><h3>Fashion Brand Advertisement</h3><p>Editorial fashion advertisement combining cut-out models, oversized typography, bold composition and kinetic motion graphics.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Motion Graphics</span><span class="tag">9:16</span></div></div></article>
+<article class="project wide reveal" data-cat="promo motion" data-tilt data-title="Fashion Brand Promotional Video" data-video="./fashion-brand-promotional.mp4"><div class="thumb tech"><video class="video-preview" muted preload="none"><source data-src="./fashion-brand-promotional.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">PROMO • 16:9</span></div><div class="project-body"><h3>Fashion Brand Promotional Video</h3><p>Premium brand promo blending fashion footage, clean typography, motion graphics and commercial pacing.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Commercial</span><span class="tag">16:9</span></div></div></article>
+<article class="project narrow reveal" data-cat="documentary" data-tilt data-title="Documentary" data-video="./documentary.mp4"><div class="thumb doc"><video class="video-preview" muted preload="none"><source data-src="./documentary.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">DOCUMENTARY • 16:9</span></div><div class="project-body"><h3>Documentary</h3><p>Story-driven edit built around narration, atmospheric B-roll, pacing, music and sound design.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Storytelling</span><span class="tag">16:9</span></div></div></article>
+<article class="project wide reveal" data-cat="showreel motion" data-tilt data-title="Video Editing Showreel" data-video="./showreel.mp4"><div class="thumb showreel"><video class="video-preview" muted playsinline preload="none"><source data-src="./showreel.mp4" type="video/mp4"></video><span class="live-overlay">Playable preview</span><span class="badge">SHOWREEL • 35 SEC</span></div><div class="project-body"><h3>Video Editing Showreel</h3><p>Fast proof of color grading, slow motion, speed ramps, reverse effects, beat sync, transitions, sound design and motion graphics.</p><div class="tags"><span class="tag">CapCut</span><span class="tag">Color</span><span class="tag">Motion</span></div></div></article>
+</div></div></section>
+
+<section class="section" id="tools"><div class="container"><div class="section-head reveal"><div><div class="kicker">Creative toolkit</div><h2>Tools I use.</h2></div><p class="lead">Three core tools supporting video editing, visual design and image enhancement.</p></div><div class="tools">
+<div class="tool reveal" data-tilt><div class="num">01</div><h3>Canva</h3><p>Social graphics, presentations, branded content and promotional visuals.</p></div>
+<div class="tool reveal" data-tilt><div class="num">02</div><h3>Photoshop</h3><p>Image editing, thumbnails, photo manipulation and advertising creatives.</p></div>
+<div class="tool reveal" data-tilt><div class="num">03</div><h3>CapCut</h3><p>Short-form editing, transitions, effects, pacing, sound design and cinematic storytelling.</p></div>
+</div></div></section>
+
+<section class="section" id="about"><div class="container"><div class="about">
+<div class="panel profile reveal"><div><div class="avatar"><span>AK</span></div><h3 style="font-size:25px">Arooj Kanwal</h3><p style="color:#9fb0c4">Video Editor & Creative Designer</p><div class="status">Available for Job Opportunities & Collaboration</div></div></div>
+<div class="panel reveal"><div class="kicker">About me</div><h2>Editing with purpose, rhythm and style.</h2><p style="color:#9fb0c4;margin-top:17px;font-size:16px">I’m passionate about turning raw footage and ideas into engaging visual stories. My portfolio explores cinematic editing, short-form content, promotional storytelling, product visuals and motion graphics.</p><div class="skills"><span class="skill">Video Editing</span><span class="skill">Reels</span><span class="skill">Color Grading</span><span class="skill">YouTube Editing</span><span class="skill">Product Ads</span><span class="skill">Motion Graphics</span><span class="skill">Sound Design</span><span class="skill">Visual Storytelling</span></div><div style="margin-top:24px"><a class="btn secondary" href="#contact">Discuss an Opportunity ↗</a></div></div>
+</div></div></section>
+
+<section class="section" id="process"><div class="container"><div class="section-head reveal"><div><div class="kicker">Workflow</div><h2>From raw footage to final cut.</h2></div><p class="lead">A clear four-step process for building purposeful edits.</p></div><div class="process">
+<div class="step reveal"><div class="num">01 — DISCOVER</div><h3>Understand</h3><p>Clarify the idea, audience and desired result.</p></div><div class="step reveal"><div class="num">02 — PLAN</div><h3>Shape</h3><p>Select footage, pacing, references and visual direction.</p></div><div class="step reveal"><div class="num">03 — CREATE</div><h3>Edit</h3><p>Cut, animate, grade, mix sound and refine the details.</p></div><div class="step reveal"><div class="num">04 — DELIVER</div><h3>Polish</h3><p>Export a clean, platform-ready final version.</p></div>
+</div></div></section>
+
+<section class="section" id="contact"><div class="container"><div class="contact">
+<div class="panel reveal"><div class="kicker">Hiring & collaboration</div><h2>Let’s create something memorable.</h2><p style="color:#9fb0c4;margin-top:16px;max-width:550px">I’m open to job opportunities, internships and professional collaborations. Share a little about the opportunity and I’ll get back to you.</p><div class="socials"><a class="social" href="#">LinkedIn</a><a class="social" href="#">Instagram</a><a class="social" href="#">TikTok</a><a class="social" href="#">YouTube</a></div></div>
+<div class="panel reveal"><form id="contactForm"><input required placeholder="Your name"><input required type="email" placeholder="Email address"><select><option>Job Opportunity</option><option>Internship</option><option>Professional Collaboration</option></select><textarea placeholder="Tell me a little about the opportunity..."></textarea><button class="btn primary" type="submit">Send Inquiry ↗</button></form></div>
+</div></div></section>
+
+<footer class="footer"><div class="container footer-inner"><div><strong style="color:#fff">Arooj Kanwal</strong> — Video Editor & Creative Designer</div><div>© 2026 All Rights Reserved</div></div></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="modal-close" id="modalClose">×</button><div class="modal-media" id="modalMedia"></div><div class="modal-info"><h3 id="modalTitle"></h3><p class="modal-note" id="modalNote"></p></div></div></div>
+
+<script>
+/* IMPORTANT: keep index.html in Desktop\portfolio website, with all MP4 files in the SAME folder. */
+const VIDEO_FOLDER = "./";
+
+const progress=document.getElementById('progress'),cursor=document.getElementById('cursorGlow');
+addEventListener('scroll',()=>{const d=document.documentElement;progress.style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'},{passive:true});
+addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+// Filters
+const filterButtons=[...document.querySelectorAll('.filter')], cards=[...document.querySelectorAll('.project')];
+filterButtons.forEach(btn=>btn.onclick=()=>{filterButtons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;cards.forEach(c=>c.classList.toggle('hidden',f!=='all'&&!c.dataset.cat.split(' ').includes(f)));});
+// 3D tilt
+for(const el of document.querySelectorAll('[data-tilt]')){el.addEventListener('pointermove',e=>{if(innerWidth<800)return;const r=el.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;const rx=(y/r.height-.5)*-5,ry=(x/r.width-.5)*6;el.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-3px)`});el.addEventListener('pointerleave',()=>el.style.transform='')}
+// Buffer previews shortly before they enter view; play them only while visible.
+const previewVideos=[...document.querySelectorAll('.video-preview')];
+const mediaCacheToken=Date.now().toString();
+function freshMediaUrl(path){
+  const url=new URL(path,document.baseURI);
+  url.searchParams.set('v',mediaCacheToken);
+  return url.href;
+}
+function loadPreview(v){
+  const source=v.querySelector('source');
+  if(!source||source.src)return;
+  source.src=freshMediaUrl(source.dataset.src);
+  v.preload='auto';
+  v.load();
+}
+const previewLoader=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting)loadPreview(entry.target);
+}),{rootMargin:'900px 0px'});
+const previewPlayer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  const v=entry.target;
+  v.dataset.visible=String(entry.isIntersecting);
+  if(entry.isIntersecting){
+    loadPreview(v);
+    if(v.readyState>=HTMLMediaElement.HAVE_FUTURE_DATA)v.play().catch(()=>{});
+  }else{
+    v.pause();
+  }
+}),{rootMargin:'0px'});
+for(const v of previewVideos){
+  const wrap=v.parentElement;
+  const source=v.querySelector('source');
+  const src=source?.dataset.src||'';
+  const err=document.createElement('div'); err.className='video-error';
+  err.innerHTML=`Video not loading.<br><span style=\"opacity:.7\">Check: ${src.replace('./','')}</span>`; wrap.appendChild(err);
+  v.addEventListener('error',()=>err.classList.add('show'));
+  v.addEventListener('loadeddata',()=>err.classList.remove('show'));
+  v.addEventListener('canplay',()=>{
+    if(v.dataset.visible==='true')v.play().catch(()=>{});
+  });
+  previewLoader.observe(v);
+  previewPlayer.observe(v);
+  wrap.addEventListener('mouseenter',()=>{
+    loadPreview(v);
+    v.muted=false;
+    v.play().catch(()=>{v.muted=true;});
+  });
+  wrap.addEventListener('mouseleave',()=>{v.pause();v.currentTime=0;v.muted=true;});
+}
+// Modal
+const modal=document.getElementById('modal'),media=document.getElementById('modalMedia'),title=document.getElementById('modalTitle'),note=document.getElementById('modalNote');
+for(const c of cards)c.addEventListener('click',()=>{title.textContent=c.dataset.title||'';const path=c.dataset.video||'';media.innerHTML='';if(path){const v=document.createElement('video');v.controls=true;v.preload='auto';v.muted=false;v.playsInline=true;v.src=freshMediaUrl(path);media.appendChild(v);note.textContent='Buffering video…';v.play().then(()=>{note.textContent='Playing with sound. Use the video controls to pause or adjust volume.'}).catch(()=>{note.textContent='Press play in the video controls to start playback with sound.'})}else{const poster=c.querySelector('.thumb')?.cloneNode(true);if(poster){poster.querySelectorAll('video,.play').forEach(x=>x.remove());poster.style.height='100%';media.appendChild(poster)}note.textContent='Make sure the MP4 filename matches the video file in the portfolio folder.'}modal.classList.add('open')});
+function closeModal(){modal.classList.remove('open');media.innerHTML=''}document.getElementById('modalClose').onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};addEventListener('keydown',e=>e.key==='Escape'&&closeModal());
+// Demo contact
+const form=document.getElementById('contactForm');form.onsubmit=e=>{e.preventDefault();const b=form.querySelector('button');b.textContent='Inquiry Ready ✓';setTimeout(()=>b.textContent='Send Inquiry ↗',1600)};
+// Particles
+const canvas=document.getElementById('particles'),ctx=canvas.getContext('2d');let W,H,ps=[];function resize(){W=innerWidth;H=innerHeight;const d=devicePixelRatio;canvas.width=W*d;canvas.height=H*d;canvas.style.width=W+'px';canvas.style.height=H+'px';ctx.setTransform(d,0,0,d,0,0);ps=Array.from({length:Math.min(90,Math.floor(W/15))},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.3+.25,s:Math.random()*.25+.04,a:Math.random()*.5+.1}))}function draw(){ctx.clearRect(0,0,W,H);for(const p of ps){p.y-=p.s;if(p.y<-5)p.y=H+5;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(92,210,255,${p.a})`;ctx.fill()}requestAnimationFrame(draw)}addEventListener('resize',resize);resize();draw();
+</script>
+</body></html>
